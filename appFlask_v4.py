@@ -30,8 +30,8 @@ def contato():
 
 @sergio_app.route('/usuario')
 def dados_usuario():
-    #nome_usuario="Mariela"
-    dados_usu = {"nome": "Mariela", "profissao": "Professora EBTT", "disciplina":"Desenvolvimento Web III"}
+    #nome_usuario="Sergio"
+    dados_usu = {"nome": "José Sergio", "profissao": "Agente dos Correios", "disciplina":"Desenvolvimento Web III"}
     return render_template("usuario.html", dados = dados_usu)
                                            #parâmetro recebe argumento
                                            #colocar o site no ar
