@@ -1,0 +1,4 @@
+# Dependências do projeto Flask
+# Instale com:  pip install -r requirements.txt
+
+Flask>=3.0

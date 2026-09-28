@@ -1,23 +1,23 @@
 from flask import Flask, render_template
 
-meu_site = Flask(__name__)
+sergio_app = Flask(__name__)
 
-@meu_site.route('/')
-@meu_site.route('/ola')
+@sergio_app.route('/')
+@sergio_app.route('/ola')
 def raiz():   #esta função está vinculada a rota raiz e a rota /ola
     #return 'Olá, Turma 2025!'
     return render_template('homepage.html')  #retorna o arquivo index.html que está na pasta templates
 
-@meu_site.route('/index')
+@sergio_app.route('/index')
 def index():   #esta função está vinculada a rota /index
     return render_template('index.html')  #retorna o arquivo index.html que está na pasta templates
 
-@meu_site.route('/contato')
+@sergio_app.route('/contato')
 def contato():
     #return 'e-mail:mariela@ifro.edu.br'
     return render_template('contato.html')  #retorna o arquivo contato.html que está na pasta templates
 
-@meu_site.route('/usuario')
+@sergio_app.route('/usuario')
 def dados_usuario():
     #nome_usuario="Mariela"
     dados_usu = {"nome": "Mariela", "profissao": "Professora EBTT", "disciplina":"Desenvolvimento Web III"}
@@ -27,7 +27,7 @@ def dados_usuario():
 
 
 #nome = request.args.get("nome")
-@meu_site.route('/rota2')
+@sergio_app.route('/rota2')
 def rota2():
     #return 'Olá, Turma 2025!'
     return render_template('rota2.html')  #retorna o arquivo rota2.html que está na pasta templates
@@ -40,6 +40,6 @@ def saudacaoes(nome):
 
 #maiores detalhes nos slides que estão no AVA.
 if __name__ == '__main__':  #verifica se o arquivo está sendo executado diretamente, e não importado
-    meu_site.run(port=7000)
+    sergio_app.run(port=7000)
 
-meu_site.run( port=6000)    #executa caso o o arquivo seja importado, mas não é uma boa prática, pois pode gerar conflito de portas
+sergio_app.run( port=6000)    #executa caso o o arquivo seja importado, mas não é uma boa prática, pois pode gerar conflito de portas
