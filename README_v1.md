@@ -8,7 +8,7 @@ Primeira versão do projeto Flask: o servidor responde com **texto simples e HTM
 | --- | --- | --- |
 | `/` | GET | `Olá, Turma 2025!` |
 | `/ola` | GET | `Olá, Turma 2025!` |
-| `/contato` | GET | `e-mail:mariela@ifro.edu.br` |
+| `/contato` | GET | `e-mail:sergiocarcara@gmail.com` |
 | `/rota2` | GET | Página com `<H3>Olá, Turma 2025!</H3>` e `<H4>sou a rota 2</H4>` (HTML em string) |
 
 ## Funções auxiliares
