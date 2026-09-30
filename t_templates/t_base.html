@@ -26,6 +26,13 @@
 
     {% endblock %}
 
+    <!-- Referência ao arquivo JavaScript -->
+    <script src="{{ url_for('static', filename='js/script1.js') }}"> </script>
+ 
+    <!--Chama a função assim que a página carrega -->
+    <script src="{{ url_for('static', filename='js/script2.js') }}" 
+            onload="mostrarDataHora();">  </script>
+
     <h6>Desenvolvido por: Turma 2025</h6>
 </body>
 </html>
